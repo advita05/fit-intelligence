@@ -10,7 +10,7 @@ segmentor = mp_selfie_segmentation.SelfieSegmentation(model_selection=1)
 
 def calculate_scale_factor(mask, landmarks, image_height, user_height_cm):
     # Calculate scale factor (cm per pixel) using user's real height.
-    ys = np.where(mask > 0.5)
+    ys, xs = np.where(mask > 0.5)
 
     if len(ys) == 0:
         print("ERROR: No person detected in the image.")
