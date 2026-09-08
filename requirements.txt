@@ -1,9 +1,0 @@
-opencv-python==4.11.0.86
-numpy==1.26.4
-mediapipe==0.10.20
-torch
-clad-body==0.4.1
-
-# Anny must be installed manually:
-# git clone https://github.com/naver/anny.git
-# cd anny && pip install -e .
